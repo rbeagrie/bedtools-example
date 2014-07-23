@@ -7,7 +7,7 @@ def main():
     action = sys.argv[1]
     filenames = sys.argv[2:]
     assert action in ['--min', '--mean', '--max', '--sum'], \
-           'Action is not one of --min, --mean, or --max: ' + action
+           'Action is not one of --min, --mean, --sum or --max: ' + action
     if len(filenames) == 0:
         process(sys.stdin, action)
     else:
